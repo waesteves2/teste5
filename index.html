@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+body{
+
+width: 32cm;
+height: 90cm;
+border: 1px solid black;
+margin: auto;
+background-color: #0356a3;
+}
+
+img{
+
+width: 25cm;
+
+
+
+}
+
+.btn1{
+width: 28.5cm;
+height: 5.3cm;
+border-radius: 15px;
+font-size: 50px;
+margin-left: 1.8cm;
+background-color: #0356a3;
+color: white;
+border-color: white;
+border: 5px solid;
+cursor: pointer;
+}
+.btn2{
+
+width: 28.5cm;
+height: 5.3cm;
+border-radius: 15px;
+margin-left: 1.8cm;
+font-size: 40px;
+background-color: #0356a3;
+color: white;
+border-color: white;
+border: 5px solid;
+cursor: pointer;
+
+
+}
+.btn3{
+
+width: 28.5cm;
+height: 5.3cm;
+border-radius: 15px;
+margin-left: 1.8cm;
+font-size: 50px;
+background-color: #0356a3;
+color: white;
+border-color: white;
+border: 5px solid;
+cursor: pointer;
+
+
+
+}.btn4{
+width: 7cm;
+height: 5.3cm;
+border-radius: 15px;
+margin-left: 1.8cm;
+font-size: 50px;
+background-color: #0356a3;
+color: white;
+border-color: white;
+border: 5px solid;
+cursor: pointer;
+
+
+
+}
+.icon-zap {
+background-image: url(https://previews.dropbox.com/p/thumb/ABzD-ss4PciLxp3fIIX8tW6_eyU7d5xInPm8F_KGkCX5Hv_VcfLdDcQUK5xtJahaK4Fv0hLgiTtczAUZjB7LwKesGHk2e9MWLMSAG1D16l2y709ccVdEyumzDOGBdlNjbPF6Yq0kakzHCz9NGKCzdGmo1zuYdemlBwTZ42n0m9h5T3Z7-auqoRFicFgpPVxeool0v9wM7mBI45ZRssYArjCtbVGYZqR1112RNvGnDmOmhHg2inZYFiVZkiXkLe1c5MTgAF8aUAjQww_IM6zSQXFq-yY1VKVGvZEYaiGnYJqGztaVLwzvtB9DqLF_SyPPSRgqDjiMo7mrTJbcEaXamSJfOGzRCFRwjfyZ4-gDGZMsTeS_vtV1NR3Dh3FQoY-ffUI/p.png);
+background-size: contain;
+width: 75px;
+height: 75px;
+margin: auto;
+padding: 0.5cm 0cm;
+background-repeat: no-repeat;
+background-position: center;
+
+}
+
+.icon-web{
+background-image: url(https://previews.dropbox.com/p/thumb/ABw52JFlW3QgXWPogE3EJn4AZgRTDCcx69vMDKvEMin8SJSMz_JK73IOvtOl2n1ZYQztHW7FL7_V9PCFNz6-QYd8Io0npPBWxlYA19ta9g1NU59uVbqIZ6fWrWVgODAIFev6qusnfpbCkkouAHp_GK1ph10NCdeyZdCs7ADMfwn72-IqUMcxBuIZ--yF3xvpM4EG1sJ7UVhyR-agcD8OM14Bz6qMdMt_QarmPUHGJk1CVtshTQyOF6ga02ssu-vrg8ic6rcC8Ua6_QDCLFv6X5PNCGmMs4XQ7MmAU7y9EG_r476GsGQfT1t8poNaWmWix3xFwHguqfCfu9ls4PLhPgZrejMc1euD19VRPz2EqWTZZYmDc0hwQ94fRcI356Jq7QY/p.png);
+
+background-size: cover;
+width: 110px;
+height: 110px;
+margin: auto;
+padding: 0.1cm 0cm;
+background-repeat: no-repeat;
+
+
+}
+.icon-face{
+
+background-image: url(https://previews.dropbox.com/p/thumb/ABwP9NQbDvupUZmGVB3PBD4z53wOKwdVVu87tlqMCR4DpFbV0zh3rm2GHIb37H9lPTWzb33P6FLFJCBMJQHUv7eFmciumIfL76uH2Z4WZRqHAm-J17usVXbFpgr0GvczLpLmzg81cYid3uQZc7JN97dz6BAYREsHhuiWvXBAmoLtGVJTVhooCBq58u0Q9GDMUvV-h7g2tGxwnxL4cKSfVYSbhvQPU1LU18iK3-mN-Bx8qAAPhCkIyyRzuEETRTOVa2jYGxHgNjy8b-XZHI8IyyH6DSSAhPXNOycbM03H-tsj1SToqVqZUvLLlqN5URp01hdZxBJPkiWp2fRL_ZI-73E4dG3ie0rxoczO8e8h0cT1x3KMD78s0ERQuynh1XFHNlA/p.png);
+
+background-size: contain;
+width: 130px;
+height: 130px;
+margin: auto;
+padding: 0.1cm 0cm;
+background-repeat: no-repeat;
+background-position: center;
+
+
+
+}
+.icon-inst{
+
+background-image: url(https://previews.dropbox.com/p/thumb/ABxEOKDgOI5eExcsrYNEofbbEJiTq66TtyGfhesA1Qu0CnM7CCgmAJ6yYZN06z18DtyFR3tIO9vWa98Q0bZfSK2RZu77LxP7ggBrL5pCnsNzgxwpKKdvElLTY7CO1IXUYQkeEJlW4LlF_eaQ-CF_nur2FPTUDawQBm1aKDxiNd4gBZfhe4KamMPx89F9bDa951N_9wl-0tlRnKUj8mFPq5HjF0oMgRMWFZdYWr_lIQno1_Hzfqna2HdegH6R6hMhBg9l_ytMu3OIk-QAUXtRO3SHvVwrZSy_FE_kNPkYI1Qi65Q3o_LMuFifdvRblx4Bg_id-y1UcfRsgW0fFeTVcP5QixMkaAygVzjs6T76_FEVswHmLfMG3QT2VWGEI26UDks/p.png);
+
+background-size: contain;
+width: 135px;
+height: 135px;
+margin: auto;
+padding: 0.01cm 0cm;
+background-repeat: no-repeat;
+
+
+}
+
+
+
+.icon-tel{
+
+background-image: url(https://florestaljr.com.br/wp-content/uploads/sites/628/2020/05/icone-tel-3.png?x13136);
+background-size: contain;
+width: 75px;
+height: 75px;
+margin: auto;
+background-repeat: no-repeat;
+padding: 0.5cm 0cm;
+
+}
+.icon-email{
+
+background-image: url(https://previews.dropbox.com/p/thumb/ABzeujYHrJAUTKJOWaUU1_LDOJU72eIJFAi37a5bh2AhCQTMu_qFIuSwFbmyPh6EeRs5j5PClvzBgObstm3bOLxY-x9NfmqbgdMi2C7VIiYbNZf5umuAlD0XB2-o2JbILg2HPpI5EQFkQcGoBcmzoEYGEQ0MnVZedcewYb9kIA-p2CZUgVH7lWcsWo27q554wsFazqirVmp3WhFkFgb28GczSXutQUZWFMMeeFh6Xy43g-61WAQUHwHKWq-YUFisavZil9PvRVM91BiUX4CCEvyIW2MGDsk9tMh1gj2vGvVoPMo0TE5cAjoJppf0_9NMTXh3gvVqOx1epLfAt4cF47-06AOaJO4cQ8tCPsZlHP2lxdXF8lCPbEN_L7Mv7c0fv8s/p.png);
+background-size: contain;
+width: 75px;
+height: 75px;
+margin: auto;
+background-repeat: no-repeat;
+padding: 0.5cm 0cm;
+
+
+}
+.icon-loc{
+
+background-image: url(https://previews.dropbox.com/p/thumb/ABxKmVO3Pr3Aa4ELGkddTty4n3fsXMUGmv9sD8z7TeEaTseL-f08PQ5wLIlL-y15mBalkLgj_JGLspWazHi7c-VHaWnUV8ggdoz3jUtwCQwwL-g09DZDSVFgUnEHdhQB2PClNTTmVK44pqoGhxNo_tbvSyR2qyue3CWVF--kkBFp7LR9ZWeOqbcJY2SZjiCfQmYt8L7DHB_6_GZGy9Ra8uCNQoRCbuV3SfPu9-KicTYxM8jkXhHtMccPEJOxbCHrro1uN_QUAY9486yLaseKbolx3zGQWtPfFqnOTQUD9qWHQNRJu_Wk3B3q9_DqrgJz0CwB9G8aw4nD3CTHNOAB9_s4sRwQwPiLDudG9GaU00vcv2c6bN62pOjU_8D7lzg1JUE/p.png);
+background-size: contain;
+width: 75px;
+height: 75px;
+margin: auto;
+background-repeat: no-repeat;
+padding: 0.5cm 0cm;
+
+}
+
+.btn5{
+
+width: 7cm;
+height: 5.3cm;
+border-radius: 15px;
+margin-left: 3.5cm;
+font-size: 50px;
+background-color: #0356a3;
+color: white;
+border-color: white;
+border: 5px solid;
+cursor: pointer;
+
+
+}
+.btn6{
+
+width: 7cm;
+height: 5.3cm;
+border-radius: 15px;
+margin-left: 3.6cm;
+font-size: 45px;
+background-color: #0356a3;
+color: white;
+border-color: white;
+border: 5px solid;
+cursor: pointer;
+
+
+}
+.btn7{
+
+width: 28.5cm;
+height: 5.3cm;
+border-radius: 15px;
+margin-left: 1.8cm;
+font-size: 50px;
+background-color: #0356a3;
+color: white;
+border-color: white;
+border: 5px solid;
+cursor: pointer;
+
+
+}.btn8{
+
+width: 28.5cm;
+height: 5.3cm;
+border-radius: 15px;
+margin-left: 1.8cm;
+font-size: 50px;
+background-color: #0356a3;
+color: white;
+border-color: white;
+border: 5px solid;
+cursor: pointer;
+
+
+}.btn9{
+
+width: 28.5cm;
+height: 5.3cm;
+border-radius: 15px;
+margin-left: 1.8cm;
+font-size: 50px;
+background-color: #0356a3;
+color: white;
+border-color: white;
+border: 5px solid;
+cursor: pointer;
+
+
+}
+
+.foto{
+
+background-image: url(https://scontent.fbau3-1.fna.fbcdn.net/v/t39.30808-6/298754897_5374784915942661_8548489820899671692_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGIDrz6NtVB0-NU9x4byCToK_jvk4bQjKsr-O-ThtCMqytuwF7o8NdIiVYN-h1a1FkUTYRnbtSD8l0zh6JKpcCi&_nc_ohc=oteKGCqETnkAX_9n30p&tn=WtRYbqQkd5XwvzbA&_nc_ht=scontent.fbau3-1.fna&oh=00_AfCcpL9tAaKkBHfbHT-Ii7jWKRJTKiyXpwUDsaJtn6rlRg&oe=63DCCE25);
+
+width: 500px;
+height: 500px;
+border-radius: 50%;
+overflow: hidden;
+margin: auto;
+background-position: center;
+background-size: cover;
+
+}
+
+p{
+
+font-size: 80px;
+color: white;
+text-align: center;
+}
+h2{
+
+font-size: 50px;
+color: white;
+text-align: center;
+
+}
+
+html{
+
+font-family: monospace;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container"></div>
+
+  <br>
+  <br>
+
+  <br>
+
+
+  <div class="img-container">
+    <img class="img" src="https://files.nextgocard.com.br/brands/a09970ee-7982-4edf-8af1-2aba40fb3667.png" alt="logo RTE">
+  </div>
+  
+  <style>
+    .img-container {
+      width: 300px;
+      height: 300px;
+      margin-left: 30px;
+    }
+    
+    .img {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 30.9cm;
+      height: 10cm;
+      transform: rotate(45deg) scale(0);
+      animation: rotateAndGrow 2s ease-in-out forwards;
+    }
+    
+    @keyframes rotateAndGrow {
+      from {
+        transform: rotate(45deg) scale(0);
+      }
+      to {
+        transform: rotate(0) scale(1);
+      }
+    }
+    </style>
+  
+
+  <br>
+  <br>
+  <br>
+  <br><br>
+  <br><br>
+  
+
+  <div class="foto">
+
+   
+  </div>
+  
+
+  <h1>
+    <p>Cleber Araújo</p>
+  </h1>
+
+  <h2>Gestor </h2>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <script>
+    function saveContact() {
+        // Code to save contact information
+        alert("Contact information saved!");
+    }
+    function requestQuote() {
+        // Code to send a quote request
+        window.open("https://cliente.rte.com.br/Tracking/", "_blank");
+    }
+
+    function callGeneral() {
+    window.location.href = "tel:+551421042600";
+    }
+
+    function openWhatsApp() {
+    window.open("https://api.whatsapp.com/send?phone=14991644162", "_blank");
+    }       
+    
+    function sendEmail() {
+    window.location.href = "mailto:cleber.araujo@rte.com.br?subject=Inquiry";
+    }
+    
+    function openLocation() {
+        // Code to open your location in Google Maps
+        window.open("https://goo.gl/maps/FMtn3kDTTc9oXkyF6");
+    }
+    function openLinkedin() {
+        // Code to open your LinkedIn profile
+        window.open("https://www.facebook.com/cleber.mariana", "_blank");
+    }
+    function openInstagram() {
+        // Code to open your Instagram profile
+        window.open("https://instagram.com/clebinhu_araujo", "_blank");
+    }
+    function openWebsite() {
+        // Code to open your website
+        window.open("https://rte.com.br/", "_blank");
+    }
+  </script>
+
+
+
+  <div class="botoes">
+
+        <button class="btn1" onclick="saveContact()">Salvar Contato</button>
+        <br>
+        <br>
+        <br>
+        <button class="btn2" onclick="requestQuote()"><div class="icon-web"></div> Cotação,Coleta e Rastreio de Mercadorias</button>
+        <br>
+        <br>
+        <br>
+        <button class="btn3" onclick="callGeneral()"><div class="icon-tel"></div> Telefone-Fixo</button>
+        <br>
+        <br>
+        <br>
+        <button class="btn4" onclick="openWhatsApp()"> <div class="icon-zap"></div>
+          WhatsApp </button>
+        <button class="btn5" onclick="sendEmail()"> <div class="icon-email"></div> E-mail</button>
+        <button class="btn6" onclick="openLocation()"> <div class="icon-loc"></div> Localização</button>
+        <br>
+        <br>
+        <br>
+        <button class="btn7" onclick="openLinkedin()"><div class="icon-face"></div>Facebook</button>
+        <br>
+        <br>
+        <br>
+        <button class="btn8" onclick="openInstagram()"> <div class="icon-inst"></div> Instagram</button>
+        <br>
+        <br>
+        <br>
+        <button class="btn9" onclick="openWebsite()"><div class="icon-web"></div> Website</button>
+
+
+
+  </div>
+
+  
+
+
+  
+</body>
+
+
+</html>
